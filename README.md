@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
+# LLM-GISX Frontend
 
-## Project info
+Welcome to the **LLM-GISX Frontend**, a user-first AI + GIS platform that empowers ministries, farmers, and planners to intelligently identify renewable energy sites across India.
 
-**URL**: https://lovable.dev/projects/444536b1-9f10-4548-9a03-416dd4f30d38
+This frontend interfaces with an LLM-powered geospatial engine, allowing users to chat, draw bounding boxes, analyze maps, view reports, and even speak in their native languages — all without needing GIS expertise.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🌏 What Is This?
 
-**Use Lovable**
+**LLM-GISX** helps India transition toward **Net Zero** by making renewable energy planning accessible and automated. It supports:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/444536b1-9f10-4548-9a03-416dd4f30d38) and start prompting.
+- **Ministry Users:** Access detailed geospatial site reports with cost, environmental checks, and legal compliance.
+- **Farmers:** Ask agricultural queries via voice or text, in regional languages, and get AI-powered insights.
+- **Map Analysis:** Draw bounding boxes, upload TIFF files, and view optimized energy zones.
+- **Reports:** Download submission-ready PDFs or email outputs directly.
 
-Changes made via Lovable will be committed automatically to this repo.
+This is the frontend client built with **React + TypeScript + TailwindCSS**, and designed to integrate with a powerful backend AI+GIS agent.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧠 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Area         | Technology                                     |
+|--------------|------------------------------------------------|
+| Framework    | React + Vite                                   |
+| UI Library   | TailwindCSS, shadcn/ui                         |
+| State & Hooks| React Hooks                                    |
+| GIS Engine   | OpenLayers                                     |
+| AI & Voice   | Chat-based LLM interaction, Web Speech API     |
+| Routing      | React Router                                   |
+| Icons        | Lucide                                         |
+| Styling      | Custom theme: Green & White (Earth-safe palette) |
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Features
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### ✅ Authentication
+- **Ministry:** Email + password login (no signup)
+- **Farmer:** Mobile-based signup/login with multilingual voice/text support
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🗣️ Chat Assistant
+- Ask about renewable energy sites, crops, weather, etc.
+- Works in both English and native Indian languages
+- Voice-enabled for farmers
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 🗺️ Interactive Map
+- Draw bounding box to select area
+- Upload `.tif` files for analysis
+- View optimized site points and recommendations
+
+### 📊 Reports & Summary
+- Auto-generated reports with lat/lon, cost, and growth projections
+- Ministry users can download or email outputs
+- Farmer users can visually explore results
+
+### 🌐 Language Selector
+- Supports over 15+ Indian languages
+- Text-to-speech feedback
+- Designed for low-literacy and rural users
+
+---
+
+## ⚙️ Getting Started
+
+```bash
+# 1. Clone the repository
+git clone [https://github.com/your-org/llm-gisx-frontend.git](https://github.com/dhruv-developer/LLM-GISX-Frontend
+cd llm-gisx-frontend
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the dev server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+# 4. Open in browser
+http://localhost:5173
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+Folder Structure
+bash
+Copy
+Edit
+/src
+├── components         # UI and logic (ChatBot, MapView, Dashboard)
+├── context            # Auth context for protected routes
+├── api                # API calls to backend
+├── hooks              # Reusable hooks (e.g. toast)
+├── pages              # Route-level pages (Dashboard, Landing)
+├── assets             # Static files, icons, etc.
+├── App.tsx            # Main app entry
+├── main.tsx           # Bootstrap file
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/444536b1-9f10-4548-9a03-416dd4f30d38) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Made by @sneharc16, @shivya0410 and @dhruv-developer
