@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000/api/v1',
+  baseURL: 'https://llm-gisx-backend.onrender.com/api/v1',
   timeout: 30000000,
 });
 
